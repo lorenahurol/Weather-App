@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Today</title>
+    <link rel="icon" type="image/png" href="images/10d@2x.png" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="onLoad()">
+    <div class="loader" id="loader">Loading...</div>
+    <main id="container" class="container">
+      <div class="block">
+        <div class="info-container">
+          <div id="location"></div>
+        </div>
+        <div class="info-container">
+          <div id="date"></div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="info-container">
+          <div class="info" id="temperature"></div>
+        </div>
+        <div class="info-container">
+          <div id="description"></div>
+        </div>
+
+        <div class="info-container">
+          Humidity:
+          <div class="info" id="humidity"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
